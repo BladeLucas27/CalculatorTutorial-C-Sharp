@@ -50,6 +50,7 @@ namespace CalculatorTutorial
             this.buttonDecimal = new System.Windows.Forms.Button();
             this.buttonRecall = new System.Windows.Forms.Button();
             this.buttonModulo = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -290,6 +291,18 @@ namespace CalculatorTutorial
             this.buttonModulo.UseVisualStyleBackColor = false;
             this.buttonModulo.Click += new System.EventHandler(this.buttonModulo_Click);
             // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(210, 422);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(74, 51);
+            this.buttonBack.TabIndex = 20;
+            this.buttonBack.Text = "<--";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +310,7 @@ namespace CalculatorTutorial
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(433, 500);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonModulo);
             this.Controls.Add(this.buttonRecall);
             this.Controls.Add(this.buttonDecimal);
@@ -346,6 +360,7 @@ namespace CalculatorTutorial
         private System.Windows.Forms.Button buttonDecimal;
         private System.Windows.Forms.Button buttonRecall;
         private System.Windows.Forms.Button buttonModulo;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
 

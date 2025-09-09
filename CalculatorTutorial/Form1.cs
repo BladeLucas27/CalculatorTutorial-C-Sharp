@@ -327,6 +327,34 @@ namespace CalculatorTutorial
             textBox1.Text = lastResult;
         }
 
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            if (!isOperating)
+            {
+                if (num1.Length > 0)
+                {
+                    if (num1.EndsWith("."))
+                    {
+                        hasDecimal1 = false;
+                    }
+                    num1 = num1.Substring(0, num1.Length - 1);
+                    textBox1.Text = num1;
+                }
+            }
+            else
+            {
+                if (num2.Length > 0)
+                {
+                    if (num1.EndsWith("."))
+                    {
+                        hasDecimal1 = false;
+                    }
+                    num2 = num2.Substring(0, num2.Length - 1);
+                    textBox1.Text = num2;
+                }
+            }
+        }
+
         private void buttonClear_Click(object sender, EventArgs e)
         {
             num1 = string.Empty;
