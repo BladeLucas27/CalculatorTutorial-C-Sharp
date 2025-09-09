@@ -248,10 +248,10 @@ namespace CalculatorTutorial
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.textBox1.Location = new System.Drawing.Point(46, 58);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.25F);
+            this.textBox1.Location = new System.Drawing.Point(46, 52);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(339, 38);
+            this.textBox1.Size = new System.Drawing.Size(339, 44);
             this.textBox1.TabIndex = 16;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

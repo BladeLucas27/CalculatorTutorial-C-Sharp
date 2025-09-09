@@ -306,6 +306,14 @@ namespace CalculatorTutorial
                     result = Convert.ToDouble(num1);
                 }
                 hasDecimal2 = false;
+                if(result.ToString().Contains("."))
+                {
+                    hasDecimal1 = true;
+                }
+                else
+                {
+                    hasDecimal1 = false;
+                }
                 textBox1.Text = result.ToString();
                 num1 = result.ToString();
             }
